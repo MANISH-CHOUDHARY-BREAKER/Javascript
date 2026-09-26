@@ -49,3 +49,5 @@ users[1].email
 console.log(tinderUser);
 
 console.log(Object.keys(tinderUser)); //this will return an array of keys of the object
+console.log(Object.values(tinderUser));
+console.log(Object.entries(tinderUser));
