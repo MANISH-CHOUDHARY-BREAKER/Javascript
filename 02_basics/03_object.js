@@ -1,10 +1,10 @@
-// singleton  
+// singleton and literal object  
 
 //object literal
 
 const mySym = Symbol("key1")
 
-
+//const JsUser = {} is a object literal
 
 const JsUser = {
    name: "manish choudhary",
