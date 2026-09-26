@@ -626,3 +626,33 @@ switch (day) {
     case "Friday":
         console.log("Weekend is near"
 ```
+
+⭐ Most Important String Methods for Interviews
+
+You should especially know these:
+
+Method	Purpose
+length	Get string length
+charAt()	Get character
+at()	Get character, supports negative index
+indexOf()	Find first occurrence
+lastIndexOf()	Find last occurrence
+includes()	Check if substring exists
+startsWith()	Check beginning
+endsWith()	Check ending
+slice()	Extract substring
+substring()	Extract substring
+replace()	Replace first match
+replaceAll()	Replace all matches
+split()	String → Array
+trim()	Remove surrounding whitespace
+toUpperCase()	Uppercase
+toLowerCase()	Lowercase
+repeat()	Repeat string
+padStart()	Pad beginning
+padEnd()	Pad ending
+match()	Regex matching
+search()	Regex search
+One important thing to remember
+
+Strings are immutable in JavaScript.
