@@ -656,3 +656,161 @@ search()	Regex search
 One important thing to remember
 
 Strings are immutable in JavaScript.
+
+
+# 🔢 Math & Numbers in JavaScript
+
+JavaScript provides the `Number` type and built-in `Math` object for performing mathematical operations.
+
+## 📌 Number Basics
+
+```javascript
+let num = 10;
+let decimal = 10.5;
+let negative = -20;
+```
+
+### Important Number Properties
+
+```javascript
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.MAX_SAFE_INTEGER
+Number.MIN_SAFE_INTEGER
+Number.EPSILON
+Number.NaN
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+```
+
+---
+
+## 🧮 Math Methods
+
+```javascript
+Math.abs(-10)        // 10
+Math.round(4.6)      // 5
+Math.floor(4.9)      // 4
+Math.ceil(4.1)       // 5
+Math.trunc(4.9)      // 4
+
+Math.max(10, 20, 30) // 30
+Math.min(10, 20, 30) // 10
+
+Math.sqrt(25)        // 5
+Math.cbrt(27)        // 3
+Math.pow(2, 3)       // 8
+2 ** 3               // 8
+
+Math.random()        // 0 to <1
+Math.sign(-10)       // -1
+```
+
+---
+
+## 🔄 Number Conversion
+
+```javascript
+Number("100")        // 100
+parseInt("100")      // 100
+parseFloat("10.5")   // 10.5
+
+(100).toString()     // "100"
+(10.567).toFixed(2)  // "10.57"
+```
+
+---
+
+## 🔍 Checking Numbers
+
+```javascript
+Number.isInteger(10)       // true
+Number.isFinite(10)       // true
+Number.isNaN(NaN)         // true
+Number.isSafeInteger(10)  // true
+```
+
+---
+
+## 🎲 Random Integer
+
+```javascript
+// Random number from min to max
+Math.floor(Math.random() * (max - min + 1)) + min;
+```
+
+Example:
+
+```javascript
+const random = Math.floor(Math.random() * 10) + 1;
+// 1 to 10
+```
+
+---
+
+## 🐘 BigInt
+
+Used for integers larger than `Number.MAX_SAFE_INTEGER`.
+
+```javascript
+const big = 12345678901234567890n;
+
+console.log(big);
+```
+
+---
+
+## 🧠 Useful DSA Math Operations
+
+```javascript
+// Last digit
+n % 10;
+
+// Remove last digit
+Math.floor(n / 10);
+
+// Absolute difference
+Math.abs(a - b);
+
+// Square
+n ** 2;
+
+// Cube
+n ** 3;
+```
+
+### Common DSA Topics
+
+* Reverse Number
+* Palindrome Number
+* Prime Number
+* Factorial
+* Fibonacci
+* GCD
+* LCM
+* Armstrong Number
+* Perfect Number
+* Digit Sum
+* Count Digits
+* Factorization
+
+---
+
+## ⭐ Quick Cheat Sheet
+
+| Method               | Use                |
+| -------------------- | ------------------ |
+| `Math.abs()`         | Absolute value     |
+| `Math.round()`       | Round number       |
+| `Math.floor()`       | Round down         |
+| `Math.ceil()`        | Round up           |
+| `Math.trunc()`       | Remove decimal     |
+| `Math.max()`         | Maximum            |
+| `Math.min()`         | Minimum            |
+| `Math.sqrt()`        | Square root        |
+| `Math.pow()`         | Power              |
+| `Math.random()`      | Random number      |
+| `parseInt()`         | Convert to integer |
+| `parseFloat()`       | Convert to decimal |
+| `Number.isInteger()` | Check integer      |
+| `Number.isNaN()`     | Check NaN          |
